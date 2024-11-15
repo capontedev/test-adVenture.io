@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+body {
+  background-color:#CBF3D2;
+}
+
+h2{
+ font-size: 3rem;
+}
+
+.list {
+  font-size: 2rem;
+
+  .task-container {
+    display: flex;
+    margin-top: 32px;
+  }
+}
+
+.check {
+  margin-right: 16px;
+}
+
+.task {
+    background-color:#B7C0EE;
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+  }
+  
+  .task.completed {
+    background-color: rgb(104, 125, 231);
+    text-decoration: line-through;
+    color: #330C2F;
+  }
+
+  .delete-btn {
+    margin-top: 32px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .submit-btn{
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    
+  } 
+
+  .search-text {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 2px;
+  }
